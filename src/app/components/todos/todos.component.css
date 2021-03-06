@@ -1,0 +1,50 @@
+.todo-item{
+    display: flex; 
+    padding:10px 15px;
+    border-bottom: 1px solod #ddd;
+    
+
+}
+.todo-item:nth-child(odd){
+    background-color: rgb(179, 173, 173);
+}
+.todo-item:last-of-type{
+    border-bottom: 0;
+}
+.id{
+    flex: 1 1 50px;
+}
+.todo-content{
+    flex: 1 1 100%;
+   
+}
+.todo-item.done .todo-content{
+    text-decoration: line-through;
+}
+.todo-input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    appearance: none;
+    border: none;
+    background-color: rgb(204, 199, 198);
+    margin-top: 15px;
+    font-size: 20px;
+    outline: none;
+}
+.todo-submit{
+    display: block;
+    width: 100%;
+    /* max-width: 200px; */
+    appearance: none;
+    border:none;
+    outline: none;
+    background: none;
+    background-color:#fe4880 ;
+    color: white;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
